@@ -10,7 +10,7 @@ const Counting = () => {
       <div className="text-5xl text-white flex align-middle flex-wrap gap-5">
         <img src={student} className="w-20" alt="" />
         <div>
-          <CountUp start={0} end={3000} delay={0}>
+          <CountUp start={0} end={3000} delay={0} redraw={true} duration={3}>
             {({ countUpRef }) => (
               <div>
                 <span ref={countUpRef} />
@@ -23,7 +23,7 @@ const Counting = () => {
       <div className="text-5xl text-white flex align-middle flex-wrap gap-5">
         <img src={scientist} className="w-20" alt="" />
         <div>
-          <CountUp start={0} end={320} delay={0}>
+          <CountUp start={0} end={320} delay={0} redraw={true} duration={3}>
             {({ countUpRef }) => (
               <div>
                 <span ref={countUpRef} />
@@ -36,7 +36,7 @@ const Counting = () => {
       <div className="text-5xl text-white flex align-middle flex-wrap gap-5">
         <img src={calendar} className="w-20" alt="" />
         <div>
-          <CountUp start={0} end={1000} delay={0}>
+          <CountUp start={0} end={1000} delay={0} redraw={true} duration={3}>
             {({ countUpRef }) => (
               <div>
                 <span ref={countUpRef} />
@@ -49,7 +49,7 @@ const Counting = () => {
       <div className="text-5xl text-white flex align-middle flex-wrap gap-5">
         <img src={openBook} className="w-20" alt="" />
         <div>
-          <CountUp start={0} end={3000} delay={0}>
+          <CountUp start={0} end={3000} delay={0} redraw={true} duration={3}>
             {({ countUpRef }) => (
               <div>
                 <span ref={countUpRef} />

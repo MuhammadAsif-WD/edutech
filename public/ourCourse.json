@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/DzDGtdg/2620971.png",
+    "name": "UI/UX Design Courses",
+    "number": "25 Courses"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/J7xvQ4Z/3159301.png",
+    "name": "Art & Design",
+    "number": "25 Courses"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/2tShmwc/engineer.png",
+    "name": "Computer Science",
+    "number": "10 Courses"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/3yJdmgw/2234697.png",
+    "name": "History & Archeologic",
+    "number": "25 Courses"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/2tShmwc/engineer.png",
+    "name": "Software Engineering",
+    "number": "25 Courses"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/jW2w6C6/2961130.png",
+    "name": "Information Software",
+    "number": "25 Courses"
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/PWRCmws/2382461.png",
+    "name": "Health & Fitness",
+    "number": "25 Courses"
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/94gvpY1/1997897.png",
+    "name": "Marketing",
+    "number": "15 Courses"
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/3y3dkpR/graphics-design.png",
+    "name": "Graphic Design",
+    "number": "25 Courses"
+  },
+  {
+    "id": 10,
+    "img": "https://i.ibb.co/KyQTWHf/2995101.png",
+    "name": "Music",
+    "number": "25 Courses"
+  },
+  {
+    "id": 11,
+    "img": "https://i.ibb.co/mb3RTMM/921591.png",
+    "name": "Business Administration",
+    "number": "25 Courses"
+  },
+  {
+    "id": 12,
+    "img": "https://i.ibb.co/1X8NSnR/3852822.png",
+    "name": "Web Management",
+    "number": "25 Courses"
+  }
+]

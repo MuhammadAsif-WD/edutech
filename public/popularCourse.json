@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/2tShmwc/engineer.png",
+    "name": "Basic Fundamentals for Software Engineering",
+    "ratting": "https://i.ibb.co/YQQ6fmB/star.png",
+    "teacherName": "by asif",
+    "teacherImage": "https://i.ibb.co/kgDH1d3/bussiness-man.png",
+    "classDuration": "50 lectures (190 hrs)"
+  },
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/3y3dkpR/graphics-design.png",
+    "name": "Enhancing Adobe Photoshop CC 2020 Skills",
+    "ratting": "https://i.ibb.co/YQQ6fmB/star.png",
+    "teacherName": "by asif",
+    "teacherImage": "https://i.ibb.co/kgDH1d3/bussiness-man.png",
+    "classDuration": "50 lectures (190 hrs)"
+  },
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/3MbQvYJ/web-design.png",
+    "name": "HTML, CSS, and Javascript for Web Developers",
+    "ratting": "https://i.ibb.co/YQQ6fmB/star.png",
+    "teacherName": "by asif",
+    "teacherImage": "https://i.ibb.co/kgDH1d3/bussiness-man.png",
+    "classDuration": "50 lectures (190 hrs)"
+  },
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/2tShmwc/engineer.png",
+    "name": "Basic Fundamentals for Software Engineering",
+    "ratting": "https://i.ibb.co/YQQ6fmB/star.png",
+    "teacherName": "by asif",
+    "teacherImage": "https://i.ibb.co/kgDH1d3/bussiness-man.png",
+    "classDuration": "50 lectures (190 hrs)"
+  }
+]

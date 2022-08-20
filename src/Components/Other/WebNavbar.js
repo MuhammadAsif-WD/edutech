@@ -56,6 +56,16 @@ const WebNavbar = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
+        <NavLink to="/package" className="flex items-center font-semibold">
+          Package
+        </NavLink>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
         <NavLink to="/contact" className="flex items-center font-semibold">
           Contact
         </NavLink>
