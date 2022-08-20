@@ -63,7 +63,7 @@ const WebNavbar = () => {
     </ul>
   );
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 absolute w-full xl:ml-8 lg:ml-8 md:ml-8 ml-0 backdrop-blur-xl bg-[#A8CBD1]/30">
+    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 absolute w-full xl:ml-8 lg:ml-8 md:ml-8 ml-0 backdrop-blur-xl bg-[#A8CBD1]/30 border">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
