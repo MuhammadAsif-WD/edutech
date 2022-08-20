@@ -5,7 +5,7 @@ import scientist from "../../assets/scientist.png";
 
 const Service = () => {
   return (
-    <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 service_image py-16 gap-10">
+    <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 service_image pt-16 gap-10">
       <div>
         <img
           className="pt-16 h-[750px]"
