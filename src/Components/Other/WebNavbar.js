@@ -1,5 +1,9 @@
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import NavLink from "../Shared/NavLink";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 import {
   Navbar,
   MobileNav,
@@ -7,10 +11,6 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import NavLink from "../Shared/NavLink";
-import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
-import { signOut } from "firebase/auth";
 
 const WebNavbar = () => {
   const [user] = useAuthState(auth);
@@ -94,26 +94,46 @@ const WebNavbar = () => {
           <span className="font-bold text-2xl text-white">Edutech</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        {user ? (
-          <Button
-            onClick={handleSignOut}
-            variant="gradient"
-            size="sm"
-            className="hidden lg:inline-block bg-slate-500"
-          >
-            <span>Logout</span>
-          </Button>
-        ) : (
-          <Link to="login">
+        <div className="flex">
+          <div>
+            {user ? (
+              <div className="flex">
+                <p className="pt-4 text-xs">{user.displayName}</p>
+                <div className="pl-3 pt-1">
+                  <div className="w-10 rounded-full mr-5">
+                    {user.photoURL ? (
+                      <img src={user?.photoURL} alt="" />
+                    ) : (
+                      <img src="https://i.ibb.co/YpkkPT6/2202112.png" alt="" />
+                    )}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <p>{""}</p>
+            )}
+          </div>
+          {user ? (
             <Button
+              onClick={handleSignOut}
               variant="gradient"
               size="sm"
               className="hidden lg:inline-block bg-slate-500"
             >
-              <span>Log in</span>
+              <span>Logout</span>
             </Button>
-          </Link>
-        )}
+          ) : (
+            <Link to="login">
+              <Button
+                variant="gradient"
+                size="sm"
+                className="hidden lg:inline-block bg-slate-500"
+              >
+                <span>Log in</span>
+              </Button>
+            </Link>
+          )}
+        </div>
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -154,26 +174,46 @@ const WebNavbar = () => {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        {user ? (
-          <Button
-            onClick={handleSignOut}
-            variant="gradient"
-            size="sm"
-            className="bg-slate-500 w-full"
-          >
-            <span>Logout</span>
-          </Button>
-        ) : (
-          <Link to="login">
+        <div className="flex">
+          <div>
+            {user ? (
+              <div className="flex">
+                <p className="pt-4 text-xs">{user.displayName}</p>
+                <div className="pl-3 pt-1">
+                  <div className="w-10 rounded-full mr-5">
+                    {user.photoURL ? (
+                      <img src={user?.photoURL} alt="" />
+                    ) : (
+                      <img src="https://i.ibb.co/YpkkPT6/2202112.png" alt="" />
+                    )}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <p>{""}</p>
+            )}
+          </div>
+          {user ? (
             <Button
+              onClick={handleSignOut}
               variant="gradient"
               size="sm"
-              className="bg-slate-500 w-full"
+              className="bg-slate-500"
             >
-              <span>Log in</span>
+              <span>Logout</span>
             </Button>
-          </Link>
-        )}
+          ) : (
+            <Link to="login">
+              <Button
+                variant="gradient"
+                size="sm"
+                className="bg-slate-500"
+              >
+                <span>Log in</span>
+              </Button>
+            </Link>
+          )}
+        </div>
       </MobileNav>
     </Navbar>
   );

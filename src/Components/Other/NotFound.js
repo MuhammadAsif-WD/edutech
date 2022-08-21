@@ -2,10 +2,12 @@ import React from "react";
 
 const NotFound = () => {
   return (
-    <div className="p-56">
-      <h1 className="text-6xl text-center text-[#1EB1A5]">
-        Sorry This Page Not Found
-      </h1>
+    <div>
+      <img
+        className="justify-center p-16 mx-auto my-auto"
+        src="https://i.ibb.co/r40t1Kc/5545083.png"
+        alt=""
+      />
     </div>
   );
 };

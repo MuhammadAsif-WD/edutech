@@ -8,6 +8,7 @@ import NotFound from "./Components/Other/NotFound";
 import Package from "./Components/Pages/Package";
 import SignIn from "./Components/Authentication/SignIn";
 import Signup from "./Components/Authentication/Signup";
+import Contact from "./Components/Other/Contact";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/course" element={<Courses />} />
           <Route path="/package" element={<Package />} />
+          <Route path="/contact" element={<Contact />} />
+
           <Route path="/login" element={<SignIn />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
