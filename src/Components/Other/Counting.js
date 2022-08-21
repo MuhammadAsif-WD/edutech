@@ -6,7 +6,7 @@ import calendar from "../../assets/calendar.png"
 import openBook from "../../assets/open-book.png"
 const Counting = () => {
   return (
-    <div className="pb-16 counting_bg flex flex-wrap justify-around gap-y-16">
+    <div className="pb-32 mt-48 counting_bg flex flex-wrap justify-around gap-y-16">
       <div className="text-5xl text-white flex align-middle flex-wrap gap-5">
         <img src={student} className="w-20" alt="" />
         <div>

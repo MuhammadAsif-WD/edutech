@@ -6,6 +6,8 @@ import Service from "./Components/Pages/Service";
 import Courses from "./Components/Pages/Courses";
 import NotFound from "./Components/Other/NotFound";
 import Package from "./Components/Pages/Package";
+import SignIn from "./Components/Authentication/SignIn";
+import Signup from "./Components/Authentication/Signup";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/service" element={<Service />} />
           <Route path="/course" element={<Courses />} />
           <Route path="/package" element={<Package />} />
+          <Route path="/login" element={<SignIn />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
       <WebFooter />

@@ -2,7 +2,7 @@ import React from "react";
 
 const WebFooter = () => {
   return (
-    <footer className="backdrop-blur-3xl bg-[#7AA4AD]/30">
+    <footer className="backdrop-blur-3xl bg-[#7AA4AD]/80 text-white">
       <div className="flex flex-wrap gap-x-10 p-16 justify-between">
         <div>
           <a href="/">

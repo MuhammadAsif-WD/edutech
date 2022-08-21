@@ -15,14 +15,14 @@ const Courses = () => {
     <div>
       <PopularCourse />
 
-      <div className="pb-16">
+      <div className="pb-16 mt-32">
         <h1 className="text-xl text-center font-semibold text-[#1EB2A6] pt-16 pb-5">
           COURSES
         </h1>
         <h1 className="text-4xl text-center font-semibold text-[#323232] pb-16">
           Browse Our Online Courses
         </h1>
-        <div className="flex flex-wrap gap-y-5 w-11/12 mx-auto">
+        <div className="flex flex-wrap gap-y-16 pt-16 w-11/12 mx-auto">
           {courses.map((course) => (
             <CourseDetails course={course} key={course.id}></CourseDetails>
           ))}

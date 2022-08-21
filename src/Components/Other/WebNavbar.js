@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {
   Navbar,
   MobileNav,
@@ -7,8 +8,17 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import NavLink from "../Shared/NavLink";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const WebNavbar = () => {
+  const [user] = useAuthState(auth);
+
+  const handleSignOut = () => {
+    signOut(auth);
+  };
+
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
@@ -73,7 +83,7 @@ const WebNavbar = () => {
     </ul>
   );
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 absolute w-full xl:ml-8 lg:ml-8 md:ml-8 ml-0 backdrop-blur-xl bg-[#A8CBD1]/30 border">
+    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 absolute w-full xl:ml-8 lg:ml-8 md:ml-8 ml-0 backdrop-blur-xl bg-[#A8CBD1]/80 border">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
@@ -84,13 +94,26 @@ const WebNavbar = () => {
           <span className="font-bold text-2xl text-white">Edutech</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button
-          variant="gradient"
-          size="sm"
-          className="hidden lg:inline-block bg-slate-500"
-        >
-          <span>Log in</span>
-        </Button>
+        {user ? (
+          <Button
+            onClick={handleSignOut}
+            variant="gradient"
+            size="sm"
+            className="hidden lg:inline-block bg-slate-500"
+          >
+            <span>Logout</span>
+          </Button>
+        ) : (
+          <Link to="login">
+            <Button
+              variant="gradient"
+              size="sm"
+              className="hidden lg:inline-block bg-slate-500"
+            >
+              <span>Log in</span>
+            </Button>
+          </Link>
+        )}
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -131,14 +154,26 @@ const WebNavbar = () => {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        <Button
-          variant="gradient"
-          size="sm"
-          fullWidth
-          className="mb-2 bg-slate-500"
-        >
-          <span>Log in</span>
-        </Button>
+        {user ? (
+          <Button
+            onClick={handleSignOut}
+            variant="gradient"
+            size="sm"
+            className="bg-slate-500 w-full"
+          >
+            <span>Logout</span>
+          </Button>
+        ) : (
+          <Link to="login">
+            <Button
+              variant="gradient"
+              size="sm"
+              className="bg-slate-500 w-full"
+            >
+              <span>Log in</span>
+            </Button>
+          </Link>
+        )}
       </MobileNav>
     </Navbar>
   );
